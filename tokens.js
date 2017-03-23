@@ -81,7 +81,7 @@ String.prototype.tokens = function () {
         } 
         // string
         else if (m = STRING.bexec(this)) {
-            result.push(make('string', getTok()).replace(/^("|')|("|')$/g,''));
+            result.push(make('string', getTok().replace(/^("|')|("|')$/g,''));
         } 
         // two char operator
         else if (m = TWOCHAROPERATORS.bexec(this)) {
