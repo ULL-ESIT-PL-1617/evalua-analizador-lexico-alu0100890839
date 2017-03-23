@@ -25,7 +25,7 @@ String.prototype.tokens = function () {
 
     const WHITES              = /\s+/g;
     const ID                  = /[a-zA-Z_]\w*/g;
-    const NUM                 = /d+(\.\d+)?([eE][+-]d+)?/g;
+    const NUM                 = /\b\d+(\.\d+)?([eE][+-]\d+)?\b/g;
     const STRING              = /("(\\.|[^"])*"|'(\\.|[^'])*')/g;
     const ONELINECOMMENT      = /\/\/.*/g
     const MULTIPLELINECOMMENT = /\/\*(\n|.)*?\*\//g;
